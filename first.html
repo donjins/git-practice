@@ -1,137 +1,123 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>new project</title>
 
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Segoe UI", sans-serif;
-      }
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About</title>
 
-      /* Body */
-      body {
-        background: linear-gradient(135deg, #667eea, #764ba2);
-        color: white;
-      }
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(120deg, #2980b9, #6dd5fa);
+    color: white;
+}
 
-      /* Navbar */
-      .navbar {
-        display: flex;
-        justify-content: space-between;
-        padding: 20px 50px;
-        background: rgba(0, 0, 0, 0.2);
-        backdrop-filter: blur(10px);
-      }
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: rgba(0,0,0,0.2);
+}
 
-      .nav-links {
-        list-style: none;
-        display: flex;
-      }
+.nav-links {
+    list-style: none;
+    display: flex;
+}
 
-      .nav-links li {
-        margin-left: 25px;
-      }
+.nav-links li {
+    margin-left: 25px;
+}
 
-      .nav-links a {
-        color: white;
-        text-decoration: none;
-        transition: 0.3s;
-      }
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
 
-      .nav-links a:hover {
-        color: #00f5d4;
-      }
+/* Content */
+.content {
+    text-align: center;
+    padding: 80px 20px;
+}
 
-      /* Content */
-      .content {
-        text-align: center;
-        padding: 80px 20px;
-      }
+.content h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
 
-      .content h1 {
-        font-size: 42px;
-        margin-bottom: 20px;
-      }
+.content p {
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.6;
+}
 
-      .content p {
-        max-width: 600px;
-        margin: auto;
-        margin-bottom: 40px;
-      }
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
 
-      /* Cards */
-      .cards {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 20px;
-        padding: 0 40px;
-      }
+.card {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    transition: 0.3s;
+}
 
-      /* Card */
-      .card {
-        background: white;
-        color: black;
-        padding: 20px;
-        border-radius: 12px;
-        transition: 0.3s;
-      }
+.card:hover {
+    transform: scale(1.05);
+}
+</style>
+</head>
 
-      .card:hover {
-        transform: translateY(-10px) scale(1.05);
-        background: #f0f0f0;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
+<body>
+
+<header>
+    <nav class="navbar">
         <h2>MySite</h2>
         <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="features.html">Features</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="features.html">Features</a></li>
         </ul>
-      </nav>
-    </header>
+    </nav>
+</header>
 
-    <section class="content">
-      <h1>About Us</h1>
-      <p>
-        We are a modern company focused on building high-quality web
-        applications with performance and design.
-      </p>
+<section class="content">
+    <h1>About Us</h1>
+    <p>We are a modern company focused on building high-quality web applications with performance and design.</p>
 
-      <div class="cards">
+    <div class="cards">
         <div class="card">
-          <h3>🚀 Mission</h3>
-          <p>Deliver high performance apps</p>
+            <h3>🚀 Mission</h3>
+            <p>Deliver high performance apps</p>
+        </div>
+
+
+        <div class="card">
+            <h3>🎯 Vision</h3>
+            <p>Innovate and grow globally</p>
+        </div>
+
+         <div class="card">
+            <h3>🎯 Speed</h3>
+            <p>Innovate and grow globally</p>
         </div>
 
         <div class="card">
-          <h3>🚀 Mission</h3>
-          <p>Deliver high performance apps</p>
+            <h3>💡 Values</h3>
+            <p>Quality, Trust, Innovation</p>
         </div>
+    </div>
+</section>
 
-        <div class="card">
-          <h3>⚡ Speed</h3>
-          <p>Optimized for fast performance</p>
-        </div>
-
-        <div class="card">
-          <h3>🎯 Vision</h3>
-          <p>Innovate and grow globally</p>
-        </div>
-
-        <div class="card">
-          <h3>💡 Values</h3>
-          <p>Quality, Trust, Innovation</p>
-        </div>
-      </div>
-    </section>
-  </body>
+</body>
 </html>
+>>>>>>> about-update
