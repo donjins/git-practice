@@ -1,115 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
 
-        /* Navbar */
-        .navbar {
-            background: #0a192f;
-            color: white;
-            padding: 15px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+/* Background */
+body {
+    background: #f5f7fa;
+}
 
-        .nav-links {
-            list-style: none;
-            display: flex;
-        }
+/* Navbar */
+.navbar {
+    background: white;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
 
-        .nav-links li {
-            margin-left: 20px;
-        }
+.nav-links {
+    display: flex;
+    list-style: none;
+}
 
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-        }
+.nav-links li {
+    margin-left: 25px;
+}
 
-        .nav-links a:hover {
-            color: #64ffda;
-        }
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
 
-        /* Content */
-        .content {
-            padding: 50px;
-            text-align: center;
-            background: #f1f1f1;
-            min-height: 100vh;
-        }
+.nav-links a:hover {
+    color: #0077ff;
+}
 
-        /* Services */
-        .services {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 30px;
-            flex-wrap: wrap;
-        }
+/* Content */
+.content {
+    text-align: center;
+    padding: 60px 20px;
+}
 
-        .card {
-            background: white;
-            padding: 20px;
-            width: 250px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            transition: 0.3s;
-        }
+.content h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
 
-        .card:hover {
-            transform: scale(1.05);
-        }
-    </style>
+/* Services Layout */
+.services {
+    max-width: 900px;
+    margin: auto;
+}
 
+/* Card */
+.card {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateX(10px);
+}
+
+/* Icon */
+.icon {
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+/* Text */
+.text h3 {
+    margin-bottom: 5px;
+    color: #222;
+}
+
+.text p {
+    color: #666;
+}
+
+/* Responsive */
+@media(max-width:600px) {
+    .card {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+</style>
 </head>
+
 <body>
 
-    <!-- Navbar -->
-    <header>
-        <nav class="navbar">
-            <h2 class="logo">MySite</h2>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="first.html">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <nav class="navbar">
+        <h2>MySite</h2>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="first.html">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <!-- Services Page -->
-    <section class="content">
-        <h1>Our Services</h1>
-        <div class="services">
+<section class="content">
+    <h1>Our Services</h1>
 
-            <div class="card">
+    <div class="services">
+
+        <div class="card">
+            <div class="icon">💻</div>
+            <div class="text">
                 <h3>Web Development</h3>
-                <p>We build modern websites</p>
+                <p>Build scalable and high-performance websites</p>
             </div>
-
-            <div class="card">
-                <h3>UI/UX Design</h3>
-                <p>Beautiful and user-friendly designs</p>
-            </div>
-
-            <div class="card">
-                <h3>Maintenance</h3>
-                <p>We maintain and support your apps</p>
-            </div>
-
         </div>
-    </section>
+
+        <div class="card">
+            <div class="icon">🎨</div>
+            <div class="text">
+                <h3>UI/UX Design</h3>
+                <p>Create beautiful and user-friendly designs</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon">🛠</div>
+            <div class="text">
+                <h3>Maintenance</h3>
+                <p>Continuous support and updates for your system</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon">📱</div>
+            <div class="text">
+                <h3>Mobile Optimization</h3>
+                <p>Responsive design for all devices</p>
+            </div>
+        </div>
+
+    </div>
+</section>
 
 </body>
 </html>
