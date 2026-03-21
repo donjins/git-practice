@@ -15,8 +15,7 @@
 
 /* Background */
 body {
-    background: linear-gradient(135deg, #141e30, #243b55);
-    color: white;
+    background: linear-gradient(120deg, #1f4037, #99f2c8);
 }
 
 /* Navbar */
@@ -24,8 +23,9 @@ body {
     padding: 20px 50px;
     display: flex;
     justify-content: space-between;
-    background: rgba(255,255,255,0.05);
+    background: rgba(0,0,0,0.2);
     backdrop-filter: blur(10px);
+    color: white;
 }
 
 .nav-links {
@@ -40,21 +40,21 @@ body {
 .nav-links a {
     color: white;
     text-decoration: none;
-    transition: 0.3s;
 }
 
 .nav-links a:hover {
-    color: #00f5d4;
+    color: #000;
 }
 
 /* Content */
 .content {
     text-align: center;
     padding: 60px 20px;
+    color: white;
 }
 
 .content h1 {
-    font-size: 42px;
+    font-size: 40px;
     margin-bottom: 40px;
 }
 
@@ -66,46 +66,38 @@ body {
     padding: 0 40px;
 }
 
-/* Cards */
+/* Card */
 .card {
+    background: white;
+    color: black;
     padding: 25px;
     border-radius: 15px;
     transition: 0.4s;
-    color: white;
-}
-
-/* Different colors */
-.card:nth-child(1) {
-    background: linear-gradient(135deg, #ff6a00, #ee0979);
-}
-.card:nth-child(2) {
-    background: linear-gradient(135deg, #00c6ff, #0072ff);
-}
-.card:nth-child(3) {
-    background: linear-gradient(135deg, #7f00ff, #e100ff);
-}
-.card:nth-child(4) {
-    background: linear-gradient(135deg, #00b09b, #96c93d);
 }
 
 .card:hover {
-    transform: translateY(-10px) scale(1.05);
+    transform: scale(1.08);
+}
+
+/* Icon */
+.icon {
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
 /* Button */
 .btn {
-    margin-top: 15px;
     display: inline-block;
+    margin-top: 10px;
     padding: 8px 15px;
-    background: white;
-    color: black;
+    background: black;
+    color: white;
     border-radius: 5px;
     text-decoration: none;
 }
 
 .btn:hover {
-    background: black;
-    color: white;
+    background: #333;
 }
 
 /* Responsive */
@@ -133,32 +125,36 @@ body {
 </header>
 
 <section class="content">
-    <h1>🚀 Our Services</h1>
+    <h1>✨ Our Services</h1>
 
     <div class="services">
 
         <div class="card">
-            <h3>💻 Web Development</h3>
-            <p>Modern and scalable web applications</p>
+            <div class="icon">💻</div>
+            <h3>Web Development</h3>
+            <p>Modern websites with high performance</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+
+        <div class="card">
+            <div class="icon">🎨</div>
+            <h3>UI/UX Design</h3>
+            <p>Clean and creative designs</p>
             <a href="#" class="btn">Explore</a>
         </div>
 
         <div class="card">
-            <h3>🎨 UI/UX Design</h3>
-            <p>Beautiful and user-friendly design</p>
-            <a href="#" class="btn">View</a>
-        </div>
-
-        <div class="card">
-            <h3>🛠 Maintenance</h3>
-            <p>Reliable updates and support</p>
+            <div class="icon">🛠</div>
+            <h3>Maintenance</h3>
+            <p>Reliable support and updates</p>
             <a href="#" class="btn">Details</a>
         </div>
 
         <div class="card">
-            <h3>📱 Mobile Optimization</h3>
-            <p>Responsive for all devices</p>
-            <a href="#" class="btn">Check</a>
+            <div class="icon">📱</div>
+            <h3>Mobile Optimization</h3>
+            <p>Works perfectly on all devices</p>
+            <a href="#" class="btn">View</a>
         </div>
 
     </div>
